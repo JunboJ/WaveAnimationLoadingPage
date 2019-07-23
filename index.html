@@ -96,7 +96,7 @@
 
         function animate() {
             let points = xs.map(x => {
-                let y = (windowHeight * 0.57) + 20 * Math.sin((x + t) / 400);
+                let y = (windowHeight * 0.57) + 20 * Math.cos((x - t) / 400);
                 return [x, y];
             })
 
